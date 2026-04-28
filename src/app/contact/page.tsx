@@ -9,7 +9,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 export const metadata: Metadata = {
   title: "Contact Us | R&S Lawn Care",
   description:
-    "Get in touch with R&S Lawn Care. Call (509) 822-9624 or email us for lawn care services across Spokane, Tri-Cities, Yakima, and Eastern Washington.",
+    "Get in touch with R&S Lawn Care. Call (509) 822-9624 or email for service across Spokane, Spokane Valley, Liberty Lake, Airway Heights, Medical Lake, and Cheney.",
 };
 
 const contactCards = [
@@ -37,8 +37,8 @@ const contactCards = [
   {
     icon: MapPin,
     title: "Service Area",
-    primary: "Eastern Washington",
-    secondary: "Spokane, Tri-Cities, Yakima & more",
+    primary: "Spokane & Surrounding Area",
+    secondary: "Spokane Valley, Liberty Lake, Cheney & more",
     href: null,
   },
 ];
@@ -128,15 +128,11 @@ export default function ContactPage() {
                   <div className="flex flex-wrap gap-2">
                     {[
                       "Spokane",
-                      "Tri-Cities",
-                      "Yakima",
-                      "Wenatchee",
-                      "Moses Lake",
-                      "Ellensburg",
-                      "Pullman",
-                      "Cheney",
+                      "Spokane Valley",
                       "Liberty Lake",
-                      "Cle Elum",
+                      "Airway Heights",
+                      "Medical Lake",
+                      "Cheney",
                     ].map((city) => (
                       <span
                         key={city}

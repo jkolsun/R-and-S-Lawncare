@@ -30,34 +30,34 @@ import useSocialProof from "@/hooks/useSocialProof";
 
 const testimonials = [
   {
-    quote: "R&S Lawn Care transformed our yard completely. They show up on time every single week and our lawn has never looked better. Best lawn service in Eastern Washington!",
+    quote: "R&S Lawn Care transformed our yard completely. They show up on time every single week and our lawn has never looked better. Best lawn service in the Spokane area!",
     name: "Sarah M.",
     location: "Spokane, WA",
     service: "Weekly Lawn Mowing",
   },
   {
-    quote: "Professional, friendly, and incredibly affordable. They trimmed our overgrown hedges and made the whole front of our house look brand new. Amazing attention to detail.",
+    quote: "Professional, friendly, and fair pricing. They trimmed our overgrown hedges and made the whole front of our house look brand new. Real attention to detail.",
     name: "James T.",
-    location: "Tri-Cities, WA",
+    location: "Spokane Valley, WA",
     service: "Shrub Trimming",
   },
   {
-    quote: "We've used R&S for two full seasons now and couldn't be happier. They handle everything from spring cleanups to fall leaf removal. Dependable and hardworking team.",
+    quote: "We've used R&S for two full seasons. They handle everything from spring cleanups to fall leaf removal — dependable, hardworking, and honest about what the yard actually needs.",
     name: "Linda K.",
-    location: "Yakima, WA",
-    service: "Seasonal Maintenance",
+    location: "Liberty Lake, WA",
+    service: "Spring & Fall Cleanups",
   },
   {
-    quote: "Our garden beds went from a mess to the highlight of our property. They really care about getting the details right. Would recommend to anyone in the area.",
+    quote: "Our beds went from a mess to the highlight of the property. Russell and the crew care about getting the details right. Would recommend to anyone in the area.",
     name: "Robert D.",
-    location: "Wenatchee, WA",
-    service: "Garden Bed Care",
+    location: "Cheney, WA",
+    service: "Residential Landscaping",
   },
   {
-    quote: "Called R&S for a one-time leaf cleanup and was so impressed we signed up for year-round service. Reliable, honest, and they do great work every time.",
+    quote: "Started with a one-time fall cleanup and was so impressed we signed up for the whole fertilizer program. Reliable, fair, and the lawn came back stronger this spring.",
     name: "Michelle P.",
-    location: "Moses Lake, WA",
-    service: "Leaf Cleanup",
+    location: "Airway Heights, WA",
+    service: "Fertilizer & Weed Control",
   },
 ];
 
@@ -93,35 +93,35 @@ const seasons = [
 ];
 
 const faqItems = [
-  { q: "What areas in Eastern Washington do you serve?", a: "We serve communities throughout Eastern Washington including Spokane, Tri-Cities, Yakima, Wenatchee, Moses Lake, Ellensburg, Pullman, Cheney, Liberty Lake, and Cle Elum. Contact us to confirm service in your area." },
-  { q: "How do I get a free quote?", a: "Just give us a call at (509) 822-9624 or fill out our online quote form. We'll get back to you quickly with a detailed estimate based on your property size and needs." },
-  { q: "Do you offer year-round maintenance plans?", a: "Absolutely! Our seasonal plans cover spring cleanup through fall leaf removal. Plans are customized to your property and budget. Most clients save 15-20% compared to individual service pricing." },
-  { q: "What makes R&S Lawn Care different?", a: "We're locally owned, show up on time, and treat every property like it's our own. With 10+ years of experience, we deliver consistent, high-quality results at fair prices — no surprises." },
-  { q: "Do I need to be home when you come?", a: "Nope! As long as we have access to your yard, we'll take care of everything. We send a notification when the job is done so you can enjoy your freshly maintained lawn." },
-  { q: "Are you licensed and insured?", a: "Yes. R&S Lawn Care is fully licensed and insured in Washington state. We carry comprehensive liability coverage for your complete peace of mind." },
+  { q: "What areas do you serve?", a: "We serve Spokane, Spokane Valley, Liberty Lake, Airway Heights, Medical Lake, and Cheney. If you're nearby and not sure if we cover your block, give us a call and we'll let you know." },
+  { q: "How do I get a free quote?", a: "Call or text (509) 822-9624, or fill out the online quote form. We'll get back to you quickly with a detailed estimate based on your property size and what you need done." },
+  { q: "Do you offer year-round maintenance plans?", a: "Yes. We can put your property on a recurring schedule that covers mowing, fertilizer applications, spring and fall cleanups, and shrub trimming — built around your specific yard and budget." },
+  { q: "What makes R&S Lawn Care different?", a: "Locally owned, we show up when we say we will, and we treat every property like our own. Fair pricing, honest scope, and consistent results — no upselling, no surprises." },
+  { q: "Do I need to be home when you come?", a: "Nope. As long as we have access to the yard, we take care of it. Just leave the gate unlocked or share the code." },
+  { q: "Are you licensed and insured?", a: "Yes. R&S Lawn Care is fully licensed and insured in Washington state. We carry liability coverage so you have nothing to worry about." },
 ];
 
 const featuredServices = [
   {
     title: "Lawn Mowing",
-    description: "Regular, reliable mowing tailored to your lawn's needs. Clean lines, consistent height, and a healthy cut every single time — your neighbors will notice the difference.",
+    description: "Weekly or bi-weekly mowing with crisp edging, clean trim work, and a full blowdown when we're done. Same crew, same day, every visit.",
     image: "https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1200&q=80",
     icon: Scissors,
     href: "/services/lawn-mowing",
   },
   {
-    title: "Shrub Trimming",
-    description: "Keep your hedges and shrubs looking neat, healthy, and perfectly shaped. Our precision trimming promotes growth and keeps your property looking sharp all season long.",
-    image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1200&q=80",
-    icon: TreePine,
-    href: "/services/shrub-trimming",
+    title: "Spring & Fall Cleanups",
+    description: "Reset the yard at the start of the season and clear it out before winter. Plus the weed-whack lawn cleanup work that keeps it tight in between.",
+    image: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=1200&q=80",
+    icon: Leaf,
+    href: "/services/spring-fall-cleanup",
   },
   {
-    title: "Seasonal Maintenance",
-    description: "Year-round care plans that keep your property looking its best through every Eastern Washington season. From spring cleanup to fall leaf removal — we've got you covered.",
+    title: "Fertilizer & Weed Control",
+    description: "Seasonal and winterized fertilizer applications plus weed-and-feed treatments — for a thicker, greener, weed-free lawn all year.",
     image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1200&q=80",
     icon: CalendarDays,
-    href: "/services/seasonal-maintenance",
+    href: "/services/fertilizer-weed-control",
   },
 ];
 
@@ -151,7 +151,7 @@ export default function HomePage() {
       <section className="relative h-[85vh] min-h-[560px] md:h-screen md:min-h-0 w-full overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1920&q=80"
-          alt="Beautiful green lawn in Eastern Washington"
+          alt="Beautiful green lawn in the Spokane area"
           fill
           priority
           className="object-cover"
@@ -164,7 +164,7 @@ export default function HomePage() {
             <div className={`transition-all duration-1000 ease-out ${heroLoaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}>
               <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 mb-4 backdrop-blur-sm border border-white/20 text-[10.5px] font-semibold uppercase tracking-[0.2em] text-white/90">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
-                Eastern Washington
+                Spokane &amp; Surrounding Area
               </span>
               <h1 className="font-heading text-[2.5rem] sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] text-white">
                 Your Lawn,
@@ -349,7 +349,7 @@ export default function HomePage() {
                   <span className="text-accent">Dedicated to Your Yard.</span>
                 </h2>
                 <p className="mt-4 md:mt-6 text-[15px] md:text-lg leading-relaxed text-gray-500">
-                  R&S Lawn Care is a locally owned and operated lawn care company serving Eastern Washington. Every yard deserves consistent, professional care — and that&apos;s exactly what we deliver, week after week.
+                  R&S Lawn Care is a locally owned and operated lawn care company serving Spokane, Spokane Valley, Liberty Lake, Airway Heights, Medical Lake, and Cheney. Every yard deserves consistent, professional care — and that&apos;s exactly what we deliver, week after week.
                 </p>
                 <Link href="/about" className="group mt-6 md:mt-8 inline-flex items-center gap-3 rounded-lg bg-primary px-7 py-3.5 md:px-8 md:py-4 text-sm font-semibold uppercase tracking-widest text-white hover:bg-accent transition-all cursor-pointer">
                   Our Full Story <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />

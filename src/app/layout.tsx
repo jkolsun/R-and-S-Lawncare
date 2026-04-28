@@ -9,15 +9,15 @@ import ExitIntentModal from "@/components/ExitIntentModal";
 export const metadata: Metadata = {
   title: {
     template: "%s | R&S Lawn Care",
-    default: "R&S Lawn Care | Professional Lawn Care in Eastern Washington",
+    default: "R&S Lawn Care | Spokane-Area Lawn Care &amp; Landscaping",
   },
   description:
-    "R&S Lawn Care provides professional lawn mowing, shrub trimming, leaf cleanup, seasonal maintenance, and garden bed care across Eastern Washington. Serving Spokane, Tri-Cities, Yakima, Wenatchee, Moses Lake and more.",
+    "Lawn mowing, spring & fall cleanups, fertilizer and weed control, shrub trimming, and residential landscaping across Spokane, Spokane Valley, Liberty Lake, Airway Heights, Medical Lake, and Cheney.",
   metadataBase: new URL("https://randslawncare.com"),
   openGraph: {
-    title: "R&S Lawn Care | Professional Lawn Care in Eastern Washington",
+    title: "R&S Lawn Care | Spokane-Area Lawn Care & Landscaping",
     description:
-      "Trusted lawn care services for Eastern Washington homeowners. Free quotes available.",
+      "Trusted lawn care for Spokane-area homeowners. Free quotes — call (509) 822-9624.",
     type: "website",
   },
   other: {
@@ -30,21 +30,17 @@ const jsonLd = {
   "@type": "LocalBusiness",
   name: "R&S Lawn Care",
   description:
-    "Professional lawn care services for Eastern Washington including lawn mowing, shrub trimming, leaf cleanup, seasonal maintenance, and garden bed care.",
+    "Lawn mowing, spring & fall cleanups, fertilizer and weed control, shrub trimming, and residential landscaping across the Spokane area.",
   telephone: "+1-509-822-9624",
   email: "randslawncare7@gmail.com",
   url: "https://randslawncare.com",
   areaServed: [
     "Spokane, WA",
-    "Tri-Cities, WA",
-    "Yakima, WA",
-    "Wenatchee, WA",
-    "Moses Lake, WA",
-    "Ellensburg, WA",
-    "Pullman, WA",
-    "Cheney, WA",
+    "Spokane Valley, WA",
     "Liberty Lake, WA",
-    "Cle Elum, WA",
+    "Airway Heights, WA",
+    "Medical Lake, WA",
+    "Cheney, WA",
   ],
   openingHoursSpecification: [
     {

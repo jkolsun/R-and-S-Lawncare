@@ -14,10 +14,11 @@ import {
 
 const services = [
   "Lawn Mowing",
+  "Spring & Fall Cleanups",
+  "Fertilizer & Weed Control",
   "Shrub Trimming",
-  "Leaf Cleanup",
-  "Seasonal Maintenance",
-  "Garden Bed Care",
+  "Residential Landscaping",
+  "Multiple Services",
 ];
 
 const steps = ["Service Details", "Property Info", "Your Info"];
@@ -68,7 +69,7 @@ export default function QuotePage() {
         <section className="relative overflow-hidden bg-primary-dark py-14 md:py-24 lg:py-32">
           <Image
             src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80"
-            alt="Beautiful lawn in Eastern Washington"
+            alt="Beautiful lawn in the Spokane area"
             fill
             className="object-cover opacity-20"
             priority
@@ -129,8 +130,8 @@ export default function QuotePage() {
             <span className="text-accent">Lawn Care Quote</span>
           </h1>
           <p className="text-lg text-white/80 max-w-2xl mx-auto">
-            Fill out the form below and we&apos;ll provide a customized quote for
-            your Eastern Washington property.
+            Fill out the form below and we&apos;ll provide a custom quote for
+            your Spokane-area property.
           </p>
         </div>
       </section>
@@ -418,7 +419,7 @@ export default function QuotePage() {
                     <div>
                       <p className="font-semibold">5-Star Rated Service</p>
                       <p className="text-sm text-white/70 mt-1">
-                        Trusted by 500+ customers across Eastern Washington.
+                        Trusted by hundreds of Spokane-area customers.
                       </p>
                     </div>
                   </li>
@@ -438,9 +439,9 @@ export default function QuotePage() {
                 </div>
 
                 <div className="mt-6 pt-6 border-t border-white/20">
-                  <p className="text-xs text-white/50 text-center">
-                    Serving Spokane, Tri-Cities, Yakima, Wenatchee, Moses Lake,
-                    Ellensburg, Pullman, Cheney, Liberty Lake & Cle Elum
+                  <p className="text-xs text-white/50 text-center leading-relaxed">
+                    Serving Spokane, Spokane Valley, Liberty Lake, Airway
+                    Heights, Medical Lake &amp; Cheney
                   </p>
                 </div>
               </div>

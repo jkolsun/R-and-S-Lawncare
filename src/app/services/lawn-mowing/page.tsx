@@ -5,35 +5,35 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 export const metadata: Metadata = {
   title: "Lawn Mowing | R&S Lawn Care",
   description:
-    "Professional lawn mowing services in Eastern Washington. R&S Lawn Care delivers consistent, clean cuts for residential and commercial properties in Spokane, Tri-Cities, and beyond.",
+    "Professional lawn mowing in Spokane, Spokane Valley, Liberty Lake, Airway Heights, Medical Lake, and Cheney. Consistent, clean cuts every visit from R&S Lawn Care.",
 };
 
 export default function LawnMowingPage() {
   return (
     <ServicePageTemplate
       title="Lawn Mowing"
-      subtitle="Consistent, clean cuts that keep your Eastern Washington property looking its best all season long."
+      subtitle="Consistent, clean cuts that keep your Spokane-area property looking sharp every week."
       heroImage="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1920&q=80"
       icon={Scissors}
       description={[
-        "At R&S Lawn Care, our lawn mowing service is the foundation of a well-maintained property. We use commercial-grade mowers and precision equipment to deliver a clean, even cut on every visit. Whether your lawn is a compact residential yard or a sprawling commercial property, our experienced crew adjusts mowing height and technique to match your turf type and the current season for optimal health and appearance.",
-        "Eastern Washington lawns face unique challenges — intense summer heat, dry conditions, and rapid spring growth. Our team understands these seasonal patterns and adapts mowing schedules accordingly. We offer weekly and bi-weekly plans so your lawn stays at the ideal height without stress-cutting, which can damage grass and invite weeds or disease.",
-        "Every mowing visit includes more than just cutting the grass. We edge along sidewalks, driveways, and garden beds for a crisp, finished look. Clippings are either mulched back into the lawn to return nutrients to the soil or bagged and removed based on your preference. The result is a lawn that looks professionally maintained from every angle, every time.",
+        "Lawn mowing is the foundation of a well-maintained property, and at R&S Lawn Care we treat it that way. Our crew uses commercial-grade mowers and a steady weekly route across Spokane, Spokane Valley, Liberty Lake, Airway Heights, Medical Lake, and Cheney — so your yard stays at the right height with clean, even lines from spring all the way through fall.",
+        "Spokane-area lawns deal with rapid spring growth, hot dry summers, and a short fall window. We adjust mowing height and frequency by season — taller in summer to protect the roots, tighter in spring and fall to keep the grass healthy without stress-cutting. Weekly and bi-weekly schedules available.",
+        "Every visit includes more than just cutting the grass. We edge along sidewalks, driveways, and bed borders, trim around fences and obstacles, and blow off the hard surfaces when we are done. Mulch the clippings or bag them — your call. The result is a yard that looks like someone took care of it, every time.",
       ]}
       features={[
         "Precision mowing with commercial-grade equipment",
         "Adjustable cutting heights for seasonal conditions",
-        "Crisp edging along sidewalks and driveways",
-        "Mulching or bagging clippings per your preference",
-        "Weekly and bi-weekly scheduling options",
-        "Trimming around obstacles, fences, and beds",
-        "Consistent stripe patterns for a professional look",
-        "Post-mow blowdown of walkways and driveways",
+        "Crisp edging along sidewalks, driveways, and bed borders",
+        "String-trimming around fences, posts, and obstacles",
+        "Mulching or bagging clippings — your preference",
+        "Blowdown of walkways, driveways, and patios",
+        "Weekly and bi-weekly scheduling",
+        "Same crew, same day, every visit",
       ]}
       gallery={[
         {
           src: "https://images.unsplash.com/photo-1558904541-efa843a96f01?w=800&q=80",
-          alt: "Freshly mowed lawn with clean striping in Spokane",
+          alt: "Freshly mowed lawn in Spokane, WA",
         },
         {
           src: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=800&q=80",
@@ -41,32 +41,32 @@ export default function LawnMowingPage() {
         },
         {
           src: "https://images.unsplash.com/photo-1416879595882-3373a0480b5b?w=800&q=80",
-          alt: "Well-maintained residential lawn in Eastern Washington",
+          alt: "Clean residential lawn cut in Spokane Valley",
         },
       ]}
       faqs={[
         {
-          q: "How often should my lawn be mowed in Eastern Washington?",
-          a: "During the peak growing season (May through September), we recommend weekly mowing. In spring and fall, bi-weekly service is typically sufficient. We adjust the schedule based on growth rates and weather conditions to keep your lawn at its best.",
+          q: "How often should my lawn be mowed in the Spokane area?",
+          a: "During peak growing season (May through September), weekly mowing is the standard. In spring and fall, bi-weekly service is usually sufficient. We adjust the schedule based on growth and weather to keep your lawn at its best.",
         },
         {
           q: "What mowing height do you use?",
-          a: "We adjust mowing height based on your grass type and the season. For most Eastern Washington lawns, we maintain a height of 2.5 to 3.5 inches. Taller heights are used during hot summer months to promote root health and reduce water stress.",
+          a: "We adjust mowing height based on grass type and season. For most Spokane-area lawns, we maintain 2.5 to 3.5 inches. Taller heights during the hot summer months protect the root system and reduce water stress.",
         },
         {
           q: "Do you edge as part of the mowing service?",
-          a: "Yes, every mowing visit includes edging along sidewalks, driveways, and garden bed borders. We also trim around obstacles like fences, posts, and trees, and blow off all hard surfaces when we are done.",
+          a: "Every visit includes edging along sidewalks, driveways, and bed borders, plus trimming around obstacles. We finish by blowing off all the hard surfaces, so you do not have any cleanup left to do.",
         },
         {
           q: "Can I switch between weekly and bi-weekly service?",
-          a: "Absolutely. Many of our clients start with weekly service during peak summer months and transition to bi-weekly in spring and fall. We are flexible and will work with you to find the schedule that makes the most sense for your lawn and budget.",
+          a: "Of course. Plenty of clients run weekly through the peak summer months and bi-weekly in the shoulder seasons. We will work with you to find the schedule that fits your lawn and your budget.",
         },
       ]}
       relatedServices={[
+        { title: "Spring & Fall Cleanups", href: "/services/spring-fall-cleanup" },
         { title: "Shrub Trimming", href: "/services/shrub-trimming" },
-        { title: "Leaf Cleanup", href: "/services/leaf-cleanup" },
-        { title: "Seasonal Maintenance", href: "/services/seasonal-maintenance" },
-        { title: "Garden Bed Care", href: "/services/garden-bed-care" },
+        { title: "Fertilizer & Weed Control", href: "/services/fertilizer-weed-control" },
+        { title: "Residential Landscaping", href: "/services/landscaping" },
       ]}
     />
   );

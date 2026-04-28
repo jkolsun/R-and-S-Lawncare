@@ -11,23 +11,19 @@ const quickLinks = [
 
 const serviceLinks = [
   { title: "Lawn Mowing", href: "/services/lawn-mowing" },
+  { title: "Spring & Fall Cleanups", href: "/services/spring-fall-cleanup" },
+  { title: "Fertilizer & Weed Control", href: "/services/fertilizer-weed-control" },
   { title: "Shrub Trimming", href: "/services/shrub-trimming" },
-  { title: "Leaf Cleanup", href: "/services/leaf-cleanup" },
-  { title: "Seasonal Maintenance", href: "/services/seasonal-maintenance" },
-  { title: "Garden Bed Care", href: "/services/garden-bed-care" },
+  { title: "Residential Landscaping", href: "/services/landscaping" },
 ];
 
 const serviceAreas = [
   "Spokane",
-  "Tri-Cities",
-  "Yakima",
-  "Wenatchee",
-  "Moses Lake",
-  "Ellensburg",
-  "Pullman",
-  "Cheney",
+  "Spokane Valley",
   "Liberty Lake",
-  "Cle Elum",
+  "Airway Heights",
+  "Medical Lake",
+  "Cheney",
 ];
 
 export default function Footer() {
@@ -46,9 +42,9 @@ export default function Footer() {
               </span>
             </Link>
             <p className="text-white/70 text-sm leading-relaxed mb-6">
-              Professional lawn care services for Eastern Washington. Trusted by
-              homeowners across the region for quality, reliability, and
-              friendly service.
+              Professional lawn care and residential landscaping serving
+              Spokane, Spokane Valley, Liberty Lake, Airway Heights, Medical
+              Lake, and Cheney.
             </p>
             {/* Social icons */}
             <div className="flex items-center gap-3">
@@ -176,7 +172,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3 text-white/70 text-sm">
                 <MapPin className="h-4 w-4 mt-0.5 shrink-0 text-accent" />
-                <span>Eastern Washington</span>
+                <span>Spokane &amp; Surrounding Area</span>
               </li>
               <li className="flex items-start gap-3 text-white/70 text-sm">
                 <Clock className="h-4 w-4 mt-0.5 shrink-0 text-accent" />

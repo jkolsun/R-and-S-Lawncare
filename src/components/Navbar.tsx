@@ -17,10 +17,10 @@ import {
 
 const services = [
   { title: "Lawn Mowing", href: "/services/lawn-mowing" },
+  { title: "Spring & Fall Cleanups", href: "/services/spring-fall-cleanup" },
+  { title: "Fertilizer & Weed Control", href: "/services/fertilizer-weed-control" },
   { title: "Shrub Trimming", href: "/services/shrub-trimming" },
-  { title: "Leaf Cleanup", href: "/services/leaf-cleanup" },
-  { title: "Seasonal Maintenance", href: "/services/seasonal-maintenance" },
-  { title: "Garden Bed Care", href: "/services/garden-bed-care" },
+  { title: "Residential Landscaping", href: "/services/landscaping" },
 ];
 
 const navLinks = [

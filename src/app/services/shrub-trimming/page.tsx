@@ -5,35 +5,35 @@ import ServicePageTemplate from "@/components/ServicePageTemplate";
 export const metadata: Metadata = {
   title: "Shrub Trimming | R&S Lawn Care",
   description:
-    "Expert shrub trimming and hedge shaping services across Eastern Washington. R&S Lawn Care keeps your shrubs healthy, shaped, and looking their best in Spokane, Tri-Cities, and beyond.",
+    "Expert shrub and hedge trimming across Spokane, Spokane Valley, Liberty Lake, Airway Heights, Medical Lake, and Cheney. Clean lines and healthy growth from R&S Lawn Care.",
 };
 
 export default function ShrubTrimmingPage() {
   return (
     <ServicePageTemplate
       title="Shrub Trimming"
-      subtitle="Expert trimming and shaping to keep your hedges, bushes, and ornamental shrubs looking polished and healthy."
+      subtitle="Clean lines, healthy growth, and tidy beds — hedges and shrubs maintained the way they should be."
       heroImage="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=1920&q=80"
       icon={TreePine}
       description={[
-        "Well-maintained shrubs and hedges can transform the look of any property. R&S Lawn Care provides professional shrub trimming services that keep your landscaping looking sharp, healthy, and intentional. Our crew uses a combination of power trimmers and hand shears to achieve clean lines and natural shapes, depending on the species and your aesthetic preferences.",
-        "Overgrown shrubs do more than just look untidy — they can block windows, encroach on walkways, harbor pests, and develop dead interior wood that weakens the plant over time. Regular trimming promotes airflow, sunlight penetration, and vigorous new growth. We time our trimming services based on each plant's growth cycle to ensure we are cutting at the right moment for optimal health.",
-        "Our shrub trimming service covers everything from foundation plantings and privacy hedges to ornamental topiaries and flowering bushes. We clean up all debris after every visit, leaving your beds and walkways spotless. Whether you need a one-time cleanup or recurring seasonal trimming, R&S Lawn Care has you covered across all of Eastern Washington.",
+        "Well-maintained shrubs and hedges set the tone for the rest of the property. R&S Lawn Care provides professional shrub trimming across the Spokane area — power trimming for hedge rows and large bushes, hand shears for the detail work and specialty plants, and a clean sweep of the beds when we are done.",
+        "Overgrown shrubs do more than look messy. They block windows, hang over walkways, trap moisture, and develop dead interior wood that weakens the plant over time. Regular trimming opens up airflow, lets sunlight reach the inside branches, and encourages healthy new growth. We time our trims around each plant's growth cycle so we are cutting when it actually helps.",
+        "Whether it is foundation plantings around the house, a privacy hedge along a property line, or flowering bushes that need shape without losing the bloom, our crew has it covered. Schedule a one-time cleanup or put us on a recurring rotation that hits two to three times a season.",
       ]}
       features={[
-        "Precision shaping of hedges and ornamental shrubs",
-        "Hand-shearing for delicate or specialty plants",
-        "Power trimming for large hedge rows and borders",
+        "Precision shaping of hedges, bushes, and ornamental shrubs",
+        "Hand-shearing for specialty and delicate plants",
+        "Power trimming for large hedge rows and property borders",
         "Removal of dead, damaged, and crossing branches",
         "Foundation planting maintenance",
-        "Complete debris cleanup after every visit",
-        "Seasonal timing based on plant growth cycles",
         "Privacy hedge shaping and height management",
+        "Complete debris cleanup and bed sweep after every visit",
+        "Seasonal timing based on each plant's growth cycle",
       ]}
       gallery={[
         {
           src: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=800&q=80",
-          alt: "Neatly trimmed shrubs and hedges in Eastern Washington",
+          alt: "Neatly trimmed shrubs in the Spokane area",
         },
         {
           src: "https://images.unsplash.com/photo-1560749003-f4b1e17e2dff?w=800&q=80",
@@ -41,32 +41,32 @@ export default function ShrubTrimmingPage() {
         },
         {
           src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80",
-          alt: "Well-maintained landscape with trimmed shrubs",
+          alt: "Well-maintained landscape with shaped shrubs",
         },
       ]}
       faqs={[
         {
           q: "How often should shrubs be trimmed?",
-          a: "Most shrubs in Eastern Washington benefit from trimming two to three times per year — typically in late spring after the first flush of growth, mid-summer to maintain shape, and in early fall before dormancy. Some fast-growing species may need more frequent attention.",
+          a: "Most shrubs benefit from two to three trims per year — typically late spring after the first flush of growth, mid-summer to keep the shape, and early fall before dormancy. Faster-growing species may need more frequent attention.",
         },
         {
-          q: "Will trimming harm my flowering shrubs?",
-          a: "Not when done correctly. We time trimming based on each species' bloom cycle. Spring-blooming shrubs are trimmed after they flower, while summer-blooming varieties are trimmed in late winter or early spring. This ensures you never lose a season of blooms.",
+          q: "Will trimming hurt my flowering shrubs?",
+          a: "Not when it is timed right. Spring-blooming shrubs get trimmed after they flower; summer-blooming varieties get trimmed in late winter or early spring. Done correctly, you never lose a season of blooms.",
         },
         {
           q: "Do you handle severely overgrown shrubs?",
-          a: "Yes, we offer renovation pruning for shrubs that have been neglected. This may involve more aggressive cutting back over one or two seasons to restore shape and health. We will assess the situation and give you honest recommendations before starting.",
+          a: "Yes. We offer renovation pruning for shrubs that have been neglected — usually a more aggressive cut spread over one or two seasons to restore the shape and health. We will walk it with you and give you straight recommendations before any cutting starts.",
         },
         {
           q: "Is debris cleanup included?",
-          a: "Absolutely. Every shrub trimming visit includes full cleanup. We collect all clippings, rake the surrounding beds, and blow off any hard surfaces. You will not have to lift a finger after we leave.",
+          a: "Always. We rake out the beds, blow off the hard surfaces, and haul the clippings off-site. You should not have to touch a thing after we leave.",
         },
       ]}
       relatedServices={[
         { title: "Lawn Mowing", href: "/services/lawn-mowing" },
-        { title: "Leaf Cleanup", href: "/services/leaf-cleanup" },
-        { title: "Seasonal Maintenance", href: "/services/seasonal-maintenance" },
-        { title: "Garden Bed Care", href: "/services/garden-bed-care" },
+        { title: "Spring & Fall Cleanups", href: "/services/spring-fall-cleanup" },
+        { title: "Fertilizer & Weed Control", href: "/services/fertilizer-weed-control" },
+        { title: "Residential Landscaping", href: "/services/landscaping" },
       ]}
     />
   );

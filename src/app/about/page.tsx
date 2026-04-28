@@ -9,7 +9,7 @@ import ScrollReveal from "@/components/ui/ScrollReveal";
 export const metadata: Metadata = {
   title: "About Us | R&S Lawn Care",
   description:
-    "Learn about R&S Lawn Care — Eastern Washington's trusted lawn care provider serving Spokane, Tri-Cities, Yakima, and beyond with reliable, professional service.",
+    "Russell Tobey and the R&S Lawn Care crew — serving Spokane, Spokane Valley, Liberty Lake, Airway Heights, Medical Lake, and Cheney with reliable lawn care and landscaping.",
 };
 
 const stats = [
@@ -42,7 +42,7 @@ const values = [
     icon: Users,
     title: "Community Focus",
     description:
-      "As an Eastern Washington business, we are invested in the communities we serve — from Spokane to the Tri-Cities and everywhere in between.",
+      "As a locally owned Spokane-area business, we are invested in the communities we serve — Spokane, Spokane Valley, Liberty Lake, Airway Heights, Medical Lake, and Cheney.",
   },
   {
     icon: Award,
@@ -65,7 +65,7 @@ export default function AboutPage() {
       <section className="relative overflow-hidden bg-primary-dark py-14 md:py-24 lg:py-32">
         <Image
           src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1920&q=80"
-          alt="R&S Lawn Care team maintaining a lush green lawn in Eastern Washington"
+          alt="R&S Lawn Care team maintaining a lush green lawn in the Spokane area"
           fill
           className="object-cover opacity-20"
           priority
@@ -76,13 +76,13 @@ export default function AboutPage() {
             About Our Company
           </span>
           <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Eastern Washington&apos;s Trusted{" "}
-            <span className="text-accent">Lawn Care</span> Team
+            The Spokane-Area{" "}
+            <span className="text-accent">Lawn Care</span> Crew You Can Count On
           </h1>
           <p className="text-lg sm:text-xl text-white/80 max-w-3xl mx-auto">
-            R&S Lawn Care delivers dependable, high-quality lawn and landscape
-            services across Spokane, Tri-Cities, Yakima, Wenatchee, and the
-            surrounding communities.
+            R&S Lawn Care serves Spokane, Spokane Valley, Liberty Lake, Airway
+            Heights, Medical Lake, and Cheney with dependable lawn care and
+            residential landscaping.
           </p>
         </div>
       </section>
@@ -117,28 +117,28 @@ export default function AboutPage() {
                 />
                 <div className="space-y-5 text-fg-muted text-lg leading-relaxed">
                   <p>
-                    R&S Lawn Care was founded with a straightforward mission: to
-                    provide Eastern Washington homeowners and businesses with lawn
-                    care services they can truly rely on. From day one, the
-                    company has focused on delivering consistent quality, fair
-                    pricing, and the kind of attention to detail that turns first-
-                    time clients into long-term partners.
+                    R&S Lawn Care started the way most good local businesses do:
+                    a neighbor needed help, the work got done right, and the
+                    next neighbor called. Owner Russell Tobey has been keeping
+                    Spokane-area properties looking sharp for years — built on
+                    showing up when we say we will, fair pricing, and the kind
+                    of attention to detail that turns one-time clients into
+                    long-term ones.
                   </p>
                   <p>
-                    What started as a small operation serving a handful of
-                    neighborhoods has grown into a trusted regional provider
-                    covering Spokane, Tri-Cities, Yakima, Wenatchee, Moses Lake,
-                    Ellensburg, Pullman, Cheney, Liberty Lake, and Cle Elum. That
-                    growth has been fueled entirely by word-of-mouth referrals and
-                    repeat customers who appreciate the reliability and care that
-                    R&S brings to every property.
+                    Today the crew runs a tight route across Spokane, Spokane
+                    Valley, Liberty Lake, Airway Heights, Medical Lake, and
+                    Cheney. That growth has been fueled entirely by
+                    word-of-mouth — repeat customers and referrals from people
+                    who appreciate the reliability and care R&S brings to every
+                    property.
                   </p>
                   <p>
-                    The R&S team understands the unique challenges of Eastern
-                    Washington landscapes — the hot, dry summers, the seasonal
-                    shifts, and the specific turf and soil conditions that require
-                    local expertise. That knowledge allows the company to deliver
-                    results that generic, out-of-area providers simply cannot match.
+                    Our crew knows what Spokane-area lawns deal with — the hot
+                    dry summers, the snow-load winters, and the specific turf
+                    and soil conditions that need local know-how. That on-the-
+                    ground experience is why our work holds up where generic
+                    out-of-area providers struggle.
                   </p>
                 </div>
               </div>

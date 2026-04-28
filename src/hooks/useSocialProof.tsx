@@ -4,15 +4,11 @@ import { useEffect } from "react";
 
 const cities = [
   "Spokane",
-  "Tri-Cities",
-  "Yakima",
-  "Wenatchee",
-  "Moses Lake",
-  "Ellensburg",
-  "Pullman",
-  "Cheney",
+  "Spokane Valley",
   "Liberty Lake",
-  "Cle Elum",
+  "Airway Heights",
+  "Medical Lake",
+  "Cheney",
 ];
 
 const firstNames = [
@@ -32,8 +28,9 @@ const actions = [
   "just requested a free quote",
   "booked a lawn mowing service",
   "scheduled a shrub trimming",
-  "signed up for seasonal maintenance",
-  "requested a leaf cleanup",
+  "signed up for the fertilizer program",
+  "booked a fall cleanup",
+  "scheduled a landscaping consult",
 ];
 
 function randomItem<T>(arr: T[]): T {
