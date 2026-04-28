@@ -9,7 +9,7 @@ export default function ChatWidget() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-20 right-4 md:bottom-6 md:right-6 z-50">
       <AnimatePresence>
         {isOpen && (
           <motion.div
@@ -17,7 +17,7 @@ export default function ChatWidget() {
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.9, y: 20 }}
             transition={{ duration: 0.25 }}
-            className="absolute bottom-20 right-0 w-80 rounded-2xl bg-white shadow-2xl border border-border overflow-hidden"
+            className="absolute bottom-16 md:bottom-20 right-0 w-[calc(100vw-2rem)] max-w-[20rem] rounded-2xl bg-white shadow-2xl border border-border overflow-hidden"
           >
             {/* Header */}
             <div className="bg-gradient-to-r from-primary-dark to-primary px-5 py-4">
@@ -49,9 +49,9 @@ export default function ChatWidget() {
                 className="flex items-center gap-3 rounded-xl bg-bg-alt px-4 py-3 text-fg hover:bg-primary hover:text-white transition-colors group"
               >
                 <Mail className="h-5 w-5 text-primary group-hover:text-white" />
-                <div>
+                <div className="min-w-0 flex-1">
                   <div className="font-semibold text-sm">Email Us</div>
-                  <div className="text-xs text-fg-muted group-hover:text-white/80">
+                  <div className="text-xs text-fg-muted group-hover:text-white/80 break-all">
                     randslawncare7@gmail.com
                   </div>
                 </div>
@@ -78,13 +78,13 @@ export default function ChatWidget() {
       {/* Toggle Button */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="relative flex h-14 w-14 items-center justify-center rounded-full bg-accent text-white shadow-lg hover:bg-accent-light transition-all animate-pulse-glow"
+        className="relative flex h-12 w-12 md:h-14 md:w-14 items-center justify-center rounded-full bg-accent text-white shadow-lg hover:bg-accent-light transition-all animate-pulse-glow"
         aria-label={isOpen ? "Close chat widget" : "Open chat widget"}
       >
         {isOpen ? (
-          <X className="h-6 w-6" />
+          <X className="h-5 w-5 md:h-6 md:w-6" />
         ) : (
-          <MessageCircle className="h-6 w-6" />
+          <MessageCircle className="h-5 w-5 md:h-6 md:w-6" />
         )}
       </button>
     </div>

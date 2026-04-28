@@ -46,34 +46,41 @@ function showToast() {
   const action = randomItem(actions);
   const minutesAgo = Math.floor(Math.random() * 30) + 2;
 
+  // Mobile sits ABOVE the StickyCTABar (bottom: 0, ~64px tall)
+  const isMobile = window.matchMedia("(max-width: 720px)").matches;
+  const bottomPx = isMobile ? 90 : 90;
+  const leftPx = isMobile ? 12 : 24;
+
   const toast = document.createElement("div");
   toast.style.cssText = `
     position: fixed;
-    bottom: 90px;
-    left: 24px;
+    bottom: ${bottomPx}px;
+    left: ${leftPx}px;
+    right: ${leftPx}px;
     z-index: 9999;
-    max-width: 340px;
-    padding: 14px 18px;
+    max-width: ${isMobile ? "calc(100vw - 24px)" : "340px"};
+    padding: 12px 16px;
     background: white;
     border-radius: 12px;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.12);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.14);
     border: 1px solid #E5E7EB;
     font-family: 'DM Sans', system-ui, sans-serif;
-    font-size: 14px;
+    font-size: 13.5px;
     color: #111827;
     opacity: 0;
     transform: translateX(-20px);
     transition: all 0.4s ease;
+    box-sizing: border-box;
   `;
 
   toast.innerHTML = `
-    <div style="display:flex;align-items:center;gap:10px;">
-      <div style="width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,#0F6B3A,#16A34A);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:14px;flex-shrink:0;">
+    <div style="display:flex;align-items:center;gap:10px;min-width:0;">
+      <div style="width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#0F6B3A,#16A34A);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-size:13.5px;flex-shrink:0;">
         ${name[0]}
       </div>
-      <div>
-        <div style="font-weight:600;">${name} from ${city}</div>
-        <div style="color:#6B7280;font-size:13px;">${action} ${minutesAgo}m ago</div>
+      <div style="min-width:0;flex:1;">
+        <div style="font-weight:600;line-height:1.2;">${name} from ${city}</div>
+        <div style="color:#6B7280;font-size:12.5px;line-height:1.35;margin-top:2px;">${action} ${minutesAgo}m ago</div>
       </div>
     </div>
   `;
