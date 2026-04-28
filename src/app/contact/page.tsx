@@ -47,7 +47,7 @@ export default function ContactPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-primary-dark py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-primary-dark py-14 md:py-24 lg:py-32">
         <Image
           src="https://images.unsplash.com/photo-1591857177580-dc82b9ac4e1e?w=1920&q=80"
           alt="Contact R&S Lawn Care for professional service"
@@ -72,7 +72,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-bg">
+      <section className="py-12 md:py-20 bg-bg">
         <div className="mx-auto max-w-7xl px-6">
           <SectionHeader
             label="Reach Out"
@@ -82,9 +82,9 @@ export default function ContactPage() {
             center
           />
 
-          <div className="grid lg:grid-cols-2 gap-12 mt-12">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 mt-6 md:mt-12">
             {/* Contact Info Cards */}
-            <div className="space-y-6">
+            <div className="space-y-3 md:space-y-6">
               {contactCards.map((card, i) => {
                 const CardWrapper = card.href ? "a" : "div";
                 const wrapperProps = card.href
@@ -94,7 +94,7 @@ export default function ContactPage() {
                   <ScrollReveal key={i} delay={i * 0.1}>
                     <CardWrapper
                       {...wrapperProps}
-                      className={`flex items-start gap-5 rounded-2xl bg-white p-6 shadow-sm border border-border ${
+                      className={`flex items-start gap-5 rounded-2xl bg-white p-4 md:p-6 shadow-sm border border-border ${
                         card.href
                           ? "hover:shadow-md hover:border-primary/30 transition-all cursor-pointer"
                           : ""
@@ -152,12 +152,12 @@ export default function ContactPage() {
 
             {/* Contact Form */}
             <ScrollReveal direction="right">
-              <div className="rounded-2xl bg-white p-8 shadow-lg border border-border">
+              <div className="rounded-2xl bg-white p-5 md:p-8 shadow-lg border border-border">
                 <h3 className="font-heading text-2xl font-bold text-fg mb-6">
                   Send Us a Message
                 </h3>
                 <form className="space-y-5">
-                  <div className="grid sm:grid-cols-2 gap-5">
+                  <div className="grid sm:grid-cols-2 gap-3 md:gap-5">
                     <div>
                       <label
                         htmlFor="contact-name"

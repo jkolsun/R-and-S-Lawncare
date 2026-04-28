@@ -33,8 +33,8 @@ const serviceAreas = [
 export default function Footer() {
   return (
     <footer className="bg-primary-dark text-white">
-      <div className="mx-auto max-w-7xl px-6 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+      <div className="mx-auto max-w-7xl px-5 md:px-6 py-10 md:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12">
           {/* Brand */}
           <div>
             <Link href="/" className="flex items-center gap-2 mb-4">
@@ -205,7 +205,7 @@ export default function Footer() {
 
       {/* Copyright Bar */}
       <div className="border-t border-white/10">
-        <div className="mx-auto max-w-7xl px-6 py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-sm text-white/50">
+        <div className="mx-auto max-w-7xl px-5 md:px-6 py-4 md:py-5 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs md:text-sm text-white/50">
           <p>
             &copy; {new Date().getFullYear()} R&S Lawn Care. All rights
             reserved.

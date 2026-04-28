@@ -93,7 +93,7 @@ export default function TestimonialsPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-primary-dark py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-primary-dark py-14 md:py-24 lg:py-32">
         <Image
           src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1920&q=80"
           alt="Beautiful lawn cared for by R&S Lawn Care"
@@ -121,7 +121,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Stats Bar */}
-      <section className="py-16 bg-bg-alt border-b border-border">
+      <section className="py-10 md:py-16 bg-bg-alt border-b border-border">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
@@ -138,7 +138,7 @@ export default function TestimonialsPage() {
       </section>
 
       {/* Reviews Grid */}
-      <section className="py-20 bg-bg">
+      <section className="py-12 md:py-20 bg-bg">
         <div className="mx-auto max-w-7xl px-6">
           <SectionHeader
             label="Testimonials"

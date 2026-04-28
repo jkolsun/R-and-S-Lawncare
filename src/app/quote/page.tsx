@@ -65,7 +65,7 @@ export default function QuotePage() {
     return (
       <>
         {/* Hero */}
-        <section className="relative overflow-hidden bg-primary-dark py-24 lg:py-32">
+        <section className="relative overflow-hidden bg-primary-dark py-14 md:py-24 lg:py-32">
           <Image
             src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80"
             alt="Beautiful lawn in Eastern Washington"
@@ -136,9 +136,9 @@ export default function QuotePage() {
       </section>
 
       {/* Form Section */}
-      <section className="py-16 bg-bg">
+      <section className="py-10 md:py-16 bg-bg">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid lg:grid-cols-3 gap-12">
+          <div className="grid lg:grid-cols-3 gap-6 md:gap-12">
             {/* Form - 2 cols */}
             <div className="lg:col-span-2">
               {/* Progress Bar */}
@@ -179,7 +179,7 @@ export default function QuotePage() {
               </div>
 
               {/* Step Content */}
-              <div className="rounded-2xl bg-white p-8 shadow-lg border border-border">
+              <div className="rounded-2xl bg-white p-5 md:p-8 shadow-lg border border-border">
                 {/* Step 1: Service + Description */}
                 {currentStep === 0 && (
                   <div>
@@ -189,7 +189,7 @@ export default function QuotePage() {
                     <p className="text-fg-muted mb-6">
                       Select a service and tell us about your property.
                     </p>
-                    <div className="space-y-6">
+                    <div className="space-y-3 md:space-y-6">
                       <div>
                         <label className="block text-sm font-medium text-fg mb-3">
                           Service Type
@@ -257,7 +257,7 @@ export default function QuotePage() {
                           className="w-full rounded-lg border border-border bg-bg-alt px-4 py-3 text-fg placeholder:text-fg-muted/50 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all"
                         />
                       </div>
-                      <div className="grid sm:grid-cols-2 gap-5">
+                      <div className="grid sm:grid-cols-2 gap-3 md:gap-5">
                         <div>
                           <label
                             htmlFor="quote-city"
@@ -390,7 +390,7 @@ export default function QuotePage() {
 
             {/* Trust Card - Right Panel */}
             <div className="lg:col-span-1">
-              <div className="sticky top-24 rounded-2xl bg-primary-dark p-8 text-white">
+              <div className="sticky top-24 rounded-2xl bg-primary-dark p-6 md:p-8 text-white">
                 <h3 className="font-heading text-xl font-bold mb-6">
                   Why Choose R&S Lawn Care?
                 </h3>

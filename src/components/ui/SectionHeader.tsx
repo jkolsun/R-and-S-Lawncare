@@ -16,10 +16,10 @@ export default function SectionHeader({
   light = false,
 }: SectionHeaderProps) {
   return (
-    <div className={`mb-12 ${center ? "text-center" : "text-left"}`}>
+    <div className={`mb-7 md:mb-12 ${center ? "text-center" : "text-left"}`}>
       {label && (
         <span
-          className={`inline-block font-heading text-sm font-semibold uppercase tracking-widest mb-3 ${
+          className={`inline-block font-heading text-[11px] md:text-sm font-semibold uppercase tracking-widest mb-2 md:mb-3 ${
             light ? "text-accent-light" : "text-accent"
           }`}
         >
@@ -27,7 +27,7 @@ export default function SectionHeader({
         </span>
       )}
       <h2
-        className={`font-heading text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight ${
+        className={`font-heading text-2xl sm:text-4xl lg:text-5xl font-bold leading-tight ${
           light ? "text-white" : "text-fg"
         }`}
       >
@@ -43,7 +43,7 @@ export default function SectionHeader({
       </h2>
       {description && (
         <p
-          className={`mt-4 text-lg max-w-2xl leading-relaxed ${
+          className={`mt-3 md:mt-4 text-[15px] md:text-lg max-w-2xl leading-relaxed ${
             center ? "mx-auto" : ""
           } ${light ? "text-white/80" : "text-fg-muted"}`}
         >

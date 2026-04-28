@@ -76,7 +76,7 @@ export default function ServicesPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-primary-dark py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-primary-dark py-14 md:py-24 lg:py-32">
         <Image
           src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80"
           alt="R&S Lawn Care services across Eastern Washington"
@@ -102,14 +102,14 @@ export default function ServicesPage() {
       </section>
 
       {/* Services — Alternating Layout */}
-      <section className="py-20 bg-bg">
+      <section className="py-12 md:py-20 bg-bg">
         <div className="mx-auto max-w-7xl px-6 space-y-24">
           {services.map((service, i) => {
             const isReversed = i % 2 === 1;
             return (
               <ScrollReveal key={i}>
                 <div
-                  className={`grid lg:grid-cols-2 gap-12 lg:gap-16 items-center ${
+                  className={`grid lg:grid-cols-2 gap-8 lg:gap-16 items-center ${
                     isReversed ? "lg:direction-rtl" : ""
                   }`}
                 >

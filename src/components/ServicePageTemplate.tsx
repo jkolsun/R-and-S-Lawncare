@@ -48,29 +48,29 @@ export default function ServicePageTemplate({
           />
           <div className="absolute inset-0 bg-gradient-to-r from-primary-dark/90 to-primary-dark/60" />
         </div>
-        <div className="relative mx-auto max-w-7xl px-6 py-24 lg:py-32">
+        <div className="relative mx-auto max-w-7xl px-5 md:px-6 py-14 md:py-24 lg:py-32">
           <div className="max-w-2xl">
-            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 mb-6 backdrop-blur">
-              <Icon className="h-5 w-5 text-accent" />
-              <span className="text-sm font-medium text-white">
+            <div className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3.5 py-1.5 md:px-4 md:py-2 mb-4 md:mb-6 backdrop-blur">
+              <Icon className="h-4 w-4 md:h-5 md:w-5 text-accent" />
+              <span className="text-xs md:text-sm font-medium text-white">
                 Our Services
               </span>
             </div>
-            <h1 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-4">
+            <h1 className="font-heading text-[2rem] sm:text-5xl lg:text-6xl font-bold text-white leading-[1.05] mb-3 md:mb-4">
               {title}
             </h1>
-            <p className="text-lg text-white/80 mb-8">{subtitle}</p>
-            <div className="flex flex-col sm:flex-row gap-4">
+            <p className="text-[15px] md:text-lg text-white/80 mb-6 md:mb-8">{subtitle}</p>
+            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <Link
                 href="/quote"
-                className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 font-semibold text-white shadow-lg hover:bg-accent-light transition-all"
+                className="inline-flex items-center justify-center gap-2 rounded-lg bg-accent px-6 py-3.5 text-sm md:text-base font-semibold text-white shadow-lg hover:bg-accent-light transition-all"
               >
                 Get a Free Quote
                 <ArrowRight className="h-4 w-4" />
               </Link>
               <a
                 href="tel:5098229624"
-                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/30 px-6 py-3.5 font-semibold text-white hover:bg-white/10 transition-all"
+                className="inline-flex items-center justify-center gap-2 rounded-lg border-2 border-white/30 px-6 py-3.5 text-sm md:text-base font-semibold text-white hover:bg-white/10 transition-all"
               >
                 <Phone className="h-4 w-4" />
                 (509) 822-9624
@@ -81,9 +81,9 @@ export default function ServicePageTemplate({
       </section>
 
       {/* Description + Features (2-col) */}
-      <section className="py-20 bg-bg">
+      <section className="py-12 md:py-20 bg-bg">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-start">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-start">
             {/* Description */}
             <div>
               <SectionHeader
@@ -101,8 +101,8 @@ export default function ServicePageTemplate({
             </div>
 
             {/* Features */}
-            <div className="rounded-2xl bg-bg-alt border border-border p-8">
-              <h3 className="font-heading text-xl font-bold text-fg mb-6">
+            <div className="rounded-2xl bg-bg-alt border border-border p-6 md:p-8">
+              <h3 className="font-heading text-lg md:text-xl font-bold text-fg mb-4 md:mb-6">
                 What&apos;s Included
               </h3>
               <ul className="space-y-4">
@@ -120,7 +120,7 @@ export default function ServicePageTemplate({
 
       {/* Gallery */}
       {gallery.length > 0 && (
-        <section className="py-20 bg-bg-alt">
+        <section className="py-12 md:py-20 bg-bg-alt">
           <div className="mx-auto max-w-7xl px-6">
             <SectionHeader
               label="Our Work"
@@ -128,7 +128,7 @@ export default function ServicePageTemplate({
               titleAccent="Results"
               description="Quality lawn care you can see and feel."
             />
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
               {gallery.map((img, i) => (
                 <div
                   key={i}
@@ -148,7 +148,7 @@ export default function ServicePageTemplate({
       )}
 
       {/* Testimonial Quote */}
-      <section className="py-20 bg-bg">
+      <section className="py-12 md:py-20 bg-bg">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <div className="flex items-center justify-center gap-1 mb-4">
             {[...Array(5)].map((_, i) => (
@@ -158,7 +158,7 @@ export default function ServicePageTemplate({
               />
             ))}
           </div>
-          <blockquote className="font-heading text-2xl sm:text-3xl font-semibold text-fg leading-relaxed mb-6">
+          <blockquote className="font-heading text-lg sm:text-2xl md:text-3xl font-semibold text-fg leading-snug md:leading-relaxed mb-4 md:mb-6">
             &ldquo;R&S Lawn Care transformed our yard completely. Professional,
             punctual, and the results speak for themselves. Best lawn service in
             Eastern Washington!&rdquo;
@@ -171,7 +171,7 @@ export default function ServicePageTemplate({
 
       {/* FAQ */}
       {faqs.length > 0 && (
-        <section className="py-20 bg-bg-alt">
+        <section className="py-12 md:py-20 bg-bg-alt">
           <div className="mx-auto max-w-7xl px-6">
             <SectionHeader
               label="FAQ"
@@ -186,14 +186,14 @@ export default function ServicePageTemplate({
 
       {/* Related Services */}
       {relatedServices.length > 0 && (
-        <section className="py-20 bg-bg">
+        <section className="py-12 md:py-20 bg-bg">
           <div className="mx-auto max-w-7xl px-6">
             <SectionHeader
               label="Explore More"
               title="Related"
               titleAccent="Services"
             />
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-6">
               {relatedServices.map((svc) => (
                 <Link
                   key={svc.href}

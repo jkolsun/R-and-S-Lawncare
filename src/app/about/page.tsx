@@ -62,7 +62,7 @@ export default function AboutPage() {
   return (
     <>
       {/* Hero */}
-      <section className="relative overflow-hidden bg-primary-dark py-24 lg:py-32">
+      <section className="relative overflow-hidden bg-primary-dark py-14 md:py-24 lg:py-32">
         <Image
           src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1920&q=80"
           alt="R&S Lawn Care team maintaining a lush green lawn in Eastern Washington"
@@ -88,7 +88,7 @@ export default function AboutPage() {
       </section>
 
       {/* Stats Bar */}
-      <section className="py-16 bg-bg-alt border-b border-border">
+      <section className="py-10 md:py-16 bg-bg-alt border-b border-border">
         <div className="mx-auto max-w-7xl px-6">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
@@ -104,9 +104,9 @@ export default function AboutPage() {
       </section>
 
       {/* Company Story */}
-      <section className="py-20 bg-bg">
+      <section className="py-12 md:py-20 bg-bg">
         <div className="mx-auto max-w-7xl px-6">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-16 items-center">
             <ScrollReveal direction="left">
               <div>
                 <SectionHeader
@@ -159,7 +159,7 @@ export default function AboutPage() {
       </section>
 
       {/* Values Grid */}
-      <section className="py-20 bg-bg-alt">
+      <section className="py-12 md:py-20 bg-bg-alt">
         <div className="mx-auto max-w-7xl px-6">
           <SectionHeader
             label="Our Values"

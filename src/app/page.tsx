@@ -147,8 +147,8 @@ export default function HomePage() {
 
   return (
     <>
-      {/* ═══════ 1. FULLSCREEN HERO ═══════ */}
-      <section className="relative h-screen w-full overflow-hidden">
+      {/* ═══════ 1. HERO — full screen desktop, ~85vh mobile so next section peeks ═══════ */}
+      <section className="relative h-[85vh] min-h-[560px] md:h-screen md:min-h-0 w-full overflow-hidden">
         <Image
           src="https://images.unsplash.com/photo-1558904541-efa843a96f01?w=1920&q=80"
           alt="Beautiful green lawn in Eastern Washington"
@@ -157,31 +157,33 @@ export default function HomePage() {
           className="object-cover"
           sizes="100vw"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/15 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-black/10" />
 
-        <div className="absolute inset-0 flex flex-col justify-end pb-24 md:pb-32">
-          <div className="mx-auto w-full max-w-7xl px-6">
+        <div className="absolute inset-0 flex flex-col justify-end pb-16 md:pb-32">
+          <div className="mx-auto w-full max-w-7xl px-5 md:px-6">
             <div className={`transition-all duration-1000 ease-out ${heroLoaded ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"}`}>
-              <h1 className="font-heading text-5xl font-bold leading-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
+              <span className="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1.5 mb-4 backdrop-blur-sm border border-white/20 text-[10.5px] font-semibold uppercase tracking-[0.2em] text-white/90">
+                <span className="h-1.5 w-1.5 rounded-full bg-accent animate-pulse" />
+                Eastern Washington
+              </span>
+              <h1 className="font-heading text-[2.5rem] sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-[1.05] text-white">
                 Your Lawn,
                 <br />
-                <span className="text-accent">Our Priority</span>
+                <span className="text-accent">Our Priority.</span>
               </h1>
-              <p className={`mt-4 max-w-lg text-lg text-white/80 transition-all delay-300 duration-1000 ease-out md:text-xl ${heroLoaded ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}>
-                Eastern Washington&apos;s trusted lawn care professionals.
-                <br className="hidden sm:block" />
-                Reliable service, beautiful results.
+              <p className={`mt-4 max-w-lg text-base text-white/85 transition-all delay-300 duration-1000 ease-out md:text-xl ${heroLoaded ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}>
+                Reliable service, beautiful results — every visit, every season.
               </p>
-              <div className={`mt-8 flex flex-col sm:flex-row gap-4 transition-all delay-500 duration-1000 ease-out ${heroLoaded ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}>
+              <div className={`mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 sm:gap-4 transition-all delay-500 duration-1000 ease-out ${heroLoaded ? "translate-y-0 opacity-100" : "translate-y-6 opacity-0"}`}>
                 <Link
                   href="/quote"
-                  className="inline-flex items-center justify-center gap-3 bg-accent px-8 py-4 text-sm font-semibold uppercase tracking-widest text-white rounded-lg hover:bg-accent-light transition-all shadow-xl shadow-accent/20 cursor-pointer"
+                  className="inline-flex items-center justify-center gap-3 bg-accent px-7 py-3.5 md:px-8 md:py-4 text-[13px] md:text-sm font-semibold uppercase tracking-widest text-white rounded-lg hover:bg-accent-light transition-all shadow-xl shadow-accent/20 cursor-pointer"
                 >
                   Get a Free Estimate
                 </Link>
                 <a
                   href="tel:5098229624"
-                  className="inline-flex items-center justify-center gap-3 border border-white/30 bg-white/10 px-8 py-4 text-sm font-medium uppercase tracking-widest text-white backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all cursor-pointer"
+                  className="inline-flex items-center justify-center gap-3 border border-white/30 bg-white/10 px-7 py-3.5 md:px-8 md:py-4 text-[13px] md:text-sm font-medium uppercase tracking-widest text-white backdrop-blur-sm rounded-lg hover:bg-white/20 transition-all cursor-pointer"
                 >
                   <Phone className="h-4 w-4" />
                   (509) 822-9624
@@ -191,83 +193,110 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2">
-          <div className="flex flex-col items-center gap-2 text-white/60">
-            <span className="text-xs uppercase tracking-widest">Scroll</span>
-            <ChevronDown className="h-5 w-5 animate-bounce" />
-          </div>
+        <div className="hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 text-white/60">
+          <span className="text-xs uppercase tracking-widest">Scroll</span>
+          <ChevronDown className="h-5 w-5 animate-bounce" />
         </div>
       </section>
 
-      {/* ═══════ 2. TESTIMONIAL CAROUSEL ═══════ */}
-      <section className="bg-primary-dark py-16 md:py-24">
-        <div className="mx-auto max-w-4xl px-6 text-center">
+      {/* ═══════ 2. TESTIMONIAL CAROUSEL — tighter mobile, fluid height ═══════ */}
+      <section className="bg-primary-dark py-12 md:py-24">
+        <div className="mx-auto max-w-4xl px-5 md:px-6 text-center">
           <div className="flex items-center justify-center gap-1 mb-3">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} className="h-5 w-5 text-accent fill-accent" />
+              <Star key={i} className="h-4 w-4 md:h-5 md:w-5 text-accent fill-accent" />
             ))}
           </div>
-          <p className="text-white/50 text-sm mb-8 uppercase tracking-widest">What Our Clients Say</p>
+          <p className="text-white/50 text-[11px] md:text-sm mb-6 md:mb-8 uppercase tracking-widest">What Our Clients Say</p>
 
-          {/* Quote area — fixed height container */}
-          <div className="relative" style={{ minHeight: "280px" }}>
+          {/* Quote area — responsive minHeight (smaller on mobile) */}
+          <div className="relative min-h-[200px] md:min-h-[280px]">
             {testimonials.map((t, i) => (
               <div
                 key={i}
                 className={`absolute inset-x-0 top-0 transition-all duration-700 ease-in-out ${i === activeTestimonial ? "opacity-100" : "opacity-0 pointer-events-none"}`}
               >
-                <Quote className="mx-auto mb-4 h-8 w-8 text-accent/30" />
-                <blockquote className="font-heading text-xl font-normal italic leading-relaxed text-white/90 md:text-2xl lg:text-3xl">
+                <Quote className="mx-auto mb-3 md:mb-4 h-6 w-6 md:h-8 md:w-8 text-accent/30" />
+                <blockquote className="font-heading text-[15.5px] sm:text-lg md:text-2xl lg:text-3xl font-normal italic leading-snug md:leading-relaxed text-white/90">
                   &ldquo;{t.quote}&rdquo;
                 </blockquote>
               </div>
             ))}
           </div>
 
-          {/* Name + dots OUTSIDE the absolute container — never overlaps */}
-          <div className="mt-4">
-            <p className="text-base font-semibold text-accent">{testimonials[activeTestimonial].name}</p>
-            <p className="mt-1 text-sm text-white/40">{testimonials[activeTestimonial].location} &middot; {testimonials[activeTestimonial].service}</p>
+          {/* Name + dots */}
+          <div className="mt-3 md:mt-4">
+            <p className="text-sm md:text-base font-semibold text-accent">{testimonials[activeTestimonial].name}</p>
+            <p className="mt-1 text-xs md:text-sm text-white/40">{testimonials[activeTestimonial].location} &middot; {testimonials[activeTestimonial].service}</p>
           </div>
 
-          <div className="mt-6 flex items-center justify-center gap-3">
+          <div className="mt-5 md:mt-6 flex items-center justify-center gap-2.5">
             {testimonials.map((_, i) => (
               <button
                 key={i}
                 onClick={() => setActiveTestimonial(i)}
                 aria-label={`View testimonial ${i + 1}`}
-                className={`h-2.5 rounded-full transition-all duration-500 cursor-pointer ${i === activeTestimonial ? "w-10 bg-accent" : "w-2.5 bg-white/30 hover:bg-white/50"}`}
+                className={`h-2 md:h-2.5 rounded-full transition-all duration-500 cursor-pointer ${i === activeTestimonial ? "w-8 md:w-10 bg-accent" : "w-2 md:w-2.5 bg-white/30 hover:bg-white/50"}`}
               />
             ))}
           </div>
 
-          <Link href="/testimonials" className="mt-6 inline-flex items-center gap-2 text-sm text-accent hover:text-accent-light transition-colors">
-            Read All Reviews <ArrowRight className="h-4 w-4" />
+          <Link href="/testimonials" className="mt-5 md:mt-6 inline-flex items-center gap-2 text-xs md:text-sm text-accent hover:text-accent-light transition-colors">
+            Read All Reviews <ArrowRight className="h-3.5 w-3.5 md:h-4 md:w-4" />
           </Link>
         </div>
       </section>
 
-      {/* ═══════ 3. SERVICES — ASYMMETRIC ═══════ */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-6">
+      {/* ═══════ 3. SERVICES — tight cards on mobile, asymmetric on desktop ═══════ */}
+      <section className="bg-white py-12 md:py-32">
+        <div className="mx-auto max-w-7xl px-5 md:px-6">
           <SectionHeader
             label="What We Do"
             title="Reliable Lawn"
             titleAccent="Care Services"
-            description="From weekly mowing to full seasonal maintenance, we keep your outdoor spaces healthy and beautiful all year long."
+            description="From weekly mowing to full seasonal maintenance — one team, every season."
             center
           />
 
-          <div className="mt-20 space-y-24 md:space-y-32">
+          {/* MOBILE: tight stacked cards (image-on-top compact, ~22vh image + tight text) */}
+          <div className="mt-6 grid grid-cols-1 gap-4 md:hidden">
+            {featuredServices.map((service) => {
+              const Icon = service.icon;
+              return (
+                <Link
+                  key={service.title}
+                  href={service.href}
+                  className="group relative block overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-black/5 active:scale-[0.99] transition-transform"
+                >
+                  <div className="relative aspect-[16/10] overflow-hidden">
+                    <Image src={service.image} alt={service.title} fill className="object-cover" sizes="100vw" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-transparent to-transparent" />
+                    <div className="absolute left-3.5 top-3.5 inline-flex items-center justify-center rounded-full bg-white/95 p-2 shadow-sm">
+                      <Icon className="h-4 w-4 text-primary" />
+                    </div>
+                    <div className="absolute bottom-3.5 left-4 right-4 flex items-end justify-between gap-3">
+                      <h3 className="font-heading text-xl font-bold text-white drop-shadow">{service.title}</h3>
+                      <span className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-widest text-accent-light">
+                        Learn <ArrowRight className="h-3 w-3" />
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              );
+            })}
+          </div>
+
+          {/* DESKTOP: keep original alternating layout */}
+          <div className="hidden md:block mt-20 space-y-24 md:space-y-32">
             {featuredServices.map((service, index) => {
               const isReversed = index % 2 === 1;
               const Icon = service.icon;
               return (
                 <ScrollReveal key={service.title} delay={0.1} direction={isReversed ? "right" : "left"}>
-                  <div className={`flex flex-col items-center gap-8 md:gap-12 lg:gap-16 ${isReversed ? "md:flex-row-reverse" : "md:flex-row"}`}>
+                  <div className={`flex flex-col items-center gap-12 lg:gap-16 ${isReversed ? "md:flex-row-reverse" : "md:flex-row"}`}>
                     <div className="w-full md:w-7/12">
                       <div className="relative aspect-[4/3] overflow-hidden rounded-2xl shadow-2xl">
-                        <Image src={service.image} alt={service.title} fill className="object-cover transition-transform duration-700 hover:scale-105" sizes="(max-width: 768px) 100vw, 58vw" />
+                        <Image src={service.image} alt={service.title} fill className="object-cover transition-transform duration-700 hover:scale-105" sizes="58vw" />
                       </div>
                     </div>
                     <div className="w-full md:w-5/12">
@@ -286,8 +315,8 @@ export default function HomePage() {
             })}
           </div>
 
-          <div className="mt-16 text-center">
-            <Link href="/services" className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-white rounded-lg font-semibold hover:bg-primary-light transition-all cursor-pointer">
+          <div className="mt-8 md:mt-16 text-center">
+            <Link href="/services" className="inline-flex items-center gap-2 px-7 py-3.5 md:px-8 md:py-4 bg-primary text-white rounded-lg text-sm font-semibold hover:bg-primary-light transition-all cursor-pointer">
               View All Services <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
@@ -295,9 +324,9 @@ export default function HomePage() {
       </section>
 
       {/* ═══════ 4. STATS BAR ═══════ */}
-      <section className="bg-primary-dark py-16 md:py-20">
-        <div className="mx-auto max-w-6xl px-6">
-          <div className="grid grid-cols-2 gap-8 md:grid-cols-4 md:gap-12">
+      <section className="bg-primary-dark py-10 md:py-20">
+        <div className="mx-auto max-w-6xl px-5 md:px-6">
+          <div className="grid grid-cols-2 gap-6 md:grid-cols-4 md:gap-12">
             <AnimatedStat end={10} suffix="+" label="Years of Experience" />
             <AnimatedStat end={500} suffix="+" label="Lawns Maintained" />
             <AnimatedStat end={5} suffix=".0" label="Star Rating" />
@@ -306,23 +335,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══════ 5. ABOUT PREVIEW ═══════ */}
-      <section className="relative min-h-[500px] overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-fixed bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80')" }} />
-        <div className="absolute inset-0 bg-primary-dark/40" />
-        <div className="relative flex min-h-[500px] items-center py-20">
-          <div className="mx-auto max-w-7xl px-6">
+      {/* ═══════ 5. ABOUT PREVIEW — bg-fixed dropped for iOS, tighter mobile ═══════ */}
+      <section className="relative min-h-[380px] md:min-h-[500px] overflow-hidden">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?w=1920&q=80')" }} />
+        <div className="absolute inset-0 bg-primary-dark/55 md:bg-primary-dark/40" />
+        <div className="relative flex min-h-[380px] md:min-h-[500px] items-center py-12 md:py-20">
+          <div className="mx-auto max-w-7xl px-5 md:px-6 w-full">
             <ScrollReveal direction="left">
-              <div className="max-w-2xl rounded-3xl border border-white/20 bg-white/90 p-8 shadow-2xl backdrop-blur-lg md:p-12">
-                <span className="text-xs font-semibold uppercase tracking-widest text-accent">About Us</span>
-                <h2 className="mt-3 font-heading text-3xl font-bold text-gray-900 md:text-4xl">
+              <div className="max-w-2xl rounded-2xl md:rounded-3xl border border-white/20 bg-white/95 p-6 md:p-12 shadow-2xl backdrop-blur-lg">
+                <span className="text-[11px] md:text-xs font-semibold uppercase tracking-widest text-accent">About Us</span>
+                <h2 className="mt-2 md:mt-3 font-heading text-[1.6rem] md:text-4xl font-bold text-gray-900 leading-tight">
                   Locally Owned.<br />
                   <span className="text-accent">Dedicated to Your Yard.</span>
                 </h2>
-                <p className="mt-6 text-lg leading-relaxed text-gray-500">
-                  R&S Lawn Care is a locally owned and operated lawn care company serving Eastern Washington. We believe every yard deserves consistent, professional care — and that&apos;s exactly what we deliver, week after week.
+                <p className="mt-4 md:mt-6 text-[15px] md:text-lg leading-relaxed text-gray-500">
+                  R&S Lawn Care is a locally owned and operated lawn care company serving Eastern Washington. Every yard deserves consistent, professional care — and that&apos;s exactly what we deliver, week after week.
                 </p>
-                <Link href="/about" className="group mt-8 inline-flex items-center gap-3 rounded-lg bg-primary px-8 py-4 text-sm font-semibold uppercase tracking-widest text-white hover:bg-accent transition-all cursor-pointer">
+                <Link href="/about" className="group mt-6 md:mt-8 inline-flex items-center gap-3 rounded-lg bg-primary px-7 py-3.5 md:px-8 md:py-4 text-sm font-semibold uppercase tracking-widest text-white hover:bg-accent transition-all cursor-pointer">
                   Our Full Story <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Link>
               </div>
@@ -331,31 +360,31 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══════ 6. SEASONAL PLANNING ═══════ */}
-      <section className="bg-gray-50 py-24 md:py-32">
-        <div className="mx-auto max-w-7xl px-6">
+      {/* ═══════ 6. SEASONAL PLANNING — tighter padding, smaller mobile cards ═══════ */}
+      <section className="bg-gray-50 py-12 md:py-32">
+        <div className="mx-auto max-w-7xl px-5 md:px-6">
           <SectionHeader label="Year-Round Care" title="Seasonal" titleAccent="Planning" description="Every season demands different care. We keep your property looking great twelve months a year." center />
 
-          <div className="mt-16">
-            <div className="-mx-6 flex gap-6 overflow-x-auto px-6 pb-6 snap-x snap-mandatory md:mx-0 md:grid md:grid-cols-4 md:overflow-visible md:px-0 md:pb-0">
+          <div className="mt-6 md:mt-16">
+            <div className="-mx-5 md:mx-0 flex gap-4 md:gap-6 overflow-x-auto px-5 md:px-0 pb-4 md:pb-0 snap-x snap-mandatory md:grid md:grid-cols-4 md:overflow-visible scrollbar-hide">
               {seasons.map((season, i) => {
                 const Icon = season.icon;
                 return (
                   <ScrollReveal key={season.name} delay={i * 0.1}>
-                    <div className="group min-w-[260px] snap-center md:min-w-0">
-                      <div className="relative overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
-                        <div className="relative h-44 overflow-hidden">
-                          <Image src={season.image} alt={`${season.name} lawn care`} fill className="object-cover transition-transform duration-700 group-hover:scale-110" sizes="(max-width: 768px) 260px, 25vw" />
+                    <div className="group min-w-[240px] md:min-w-0 snap-center">
+                      <div className="relative overflow-hidden rounded-2xl bg-white shadow-md md:shadow-lg transition-all duration-500 hover:shadow-2xl hover:-translate-y-1">
+                        <div className="relative h-36 md:h-44 overflow-hidden">
+                          <Image src={season.image} alt={`${season.name} lawn care`} fill className="object-cover transition-transform duration-700 group-hover:scale-110" sizes="(max-width: 768px) 240px, 25vw" />
                           <div className={`absolute inset-0 bg-gradient-to-t ${season.color} opacity-40`} />
-                          <div className="absolute bottom-4 left-4 flex items-center gap-2">
-                            <Icon className="h-5 w-5 text-white" />
-                            <span className="font-heading text-xl font-bold text-white">{season.name}</span>
+                          <div className="absolute bottom-3 left-3 md:bottom-4 md:left-4 flex items-center gap-2">
+                            <Icon className="h-4 w-4 md:h-5 md:w-5 text-white" />
+                            <span className="font-heading text-lg md:text-xl font-bold text-white">{season.name}</span>
                           </div>
                         </div>
-                        <div className="p-5">
-                          <ul className="space-y-2.5">
+                        <div className="p-4 md:p-5">
+                          <ul className="space-y-2 md:space-y-2.5">
                             {season.services.map((s) => (
-                              <li key={s} className="flex items-start gap-2 text-sm text-gray-500">
+                              <li key={s} className="flex items-start gap-2 text-[13px] md:text-sm text-gray-500">
                                 <span className="mt-1.5 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
                                 {s}
                               </li>
@@ -372,11 +401,11 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ═══════ 7. FAQ ═══════ */}
-      <section className="bg-white py-24 md:py-32">
-        <div className="mx-auto max-w-4xl px-6">
+      {/* ═══════ 7. FAQ — tighter mobile padding ═══════ */}
+      <section className="bg-white py-12 md:py-32">
+        <div className="mx-auto max-w-4xl px-5 md:px-6">
           <SectionHeader label="Common Questions" title="Frequently" titleAccent="Asked" description="Everything you need to know about working with R&S Lawn Care." center />
-          <div className="mt-16">
+          <div className="mt-6 md:mt-16">
             <FAQAccordion items={faqItems} />
           </div>
         </div>
