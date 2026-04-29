@@ -30,8 +30,8 @@ const contactCards = [
   {
     icon: Clock,
     title: "Business Hours",
-    primary: "Mon-Fri: 7AM - 6PM",
-    secondary: "Sat: 8AM - 4PM | Sun: Closed",
+    primary: "Mon-Fri: 7AM - 5PM",
+    secondary: "Saturday & Sunday: Closed",
     href: null,
   },
   {

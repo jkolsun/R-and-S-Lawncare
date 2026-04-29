@@ -75,7 +75,7 @@ export default function Navbar() {
           <div className="flex items-center gap-6">
             <span className="flex items-center gap-1.5">
               <Clock className="h-3.5 w-3.5 text-accent-light" />
-              Mon-Fri 7AM-6PM, Sat 8AM-4PM
+              Mon-Fri 7AM-5PM &middot; Sat-Sun Closed
             </span>
             <span className="flex items-center gap-1.5">
               <MapPin className="h-3.5 w-3.5 text-accent-light" />
