@@ -67,7 +67,7 @@ const seasons = [
     icon: Flower2,
     color: "from-green-400 to-emerald-600",
     image: "https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600&q=80",
-    services: ["Spring Cleanup & Debris Removal", "Lawn Aeration & Overseeding", "Garden Bed Preparation", "Shrub Pruning & Shaping"],
+    services: ["Spring Cleanup & Debris Removal", "Weed & Feed Application", "Garden Bed Preparation", "Shrub Pruning & Shaping"],
   },
   {
     name: "Summer",
